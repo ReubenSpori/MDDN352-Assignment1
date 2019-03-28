@@ -1,0 +1,177 @@
+
+body{
+	background-color:#EBF0F4;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	padding: 2em;
+	text-align: center;
+	width:80%;
+	margin:auto;
+  font-family: 'Lato', sans-serif;
+}
+h2{
+  font-size: 2em;
+}
+h3,h2{
+	text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+#phone{
+  width:321px;
+  margin:auto;
+  margin-top:-50px;
+ /* border: 2px solid black;
+  display:flex;
+  flex-direction:row;
+  padding:20px; */
+}
+
+#content{
+  margin:auto;
+  width:85%;
+  margin-top:3em;
+  margin-bottom: 100px;
+
+}
+
+#text{
+  margin:40px;
+  width:70%;
+  margin:auto;
+  
+}
+
+#content{
+	background-color:#212922;
+	padding:20px;
+	color:#D6DBDE;
+  text-align: center;
+}
+
+#title{
+  color:white;
+  font-size: 1em;
+  font-weight:normal;
+}
+
+#textp{
+  margin:50px;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+}
+a:visited{
+  color:#62AF66;
+}
+a:hover{
+  color:#258EA6;
+}
+
+
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width:90%;
+  position: relative;
+  margin: auto;
+  background-image: url("Person1.jpg"); 
+
+  background-size:contain; /*What makes it all work!!!!!!!!!!!!!!*/
+
+  overflow:hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin:  2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    
+  }
+  h1{
+  	font-size: 1.7em;
+  }
+  #content{
+  	color: white;
+  }
+  #text{
+    width:85%;
+  }
+} 
+
+@media only screen and (min-width: 1300px) {
+  body {
+   
+  }
+  h1{
+  	font-size: 2.7em;
+  }
+  #content{
+    color: #EBF0F4;
+}
+
+} 

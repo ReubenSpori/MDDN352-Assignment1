@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8" />
+
+	<title>Football Fashion</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+   <script src="script.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+	
+	<h1>
+		Football Fashion (A Working Title)
+	</h1>
+	
+<body>
+
+<div class="slideshow-container" >
+
+	<div class="mySlides fade">
+	  <img src="ArseShirt.png" style="width:100%">
+	  
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="BarcaShirt.png" style="width:100%">
+	  
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="GermShirt.png" style="width:100%">
+	  
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="Germ2Shirt.png" style="width:100%">
+	  
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span> 
+	</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+	<div id="content">
+		<div id="text">
+
+		<div id="background">
+			<div>
+				<h3>Football Fashion</h3>
+			My project idea is based around using augmented reality to try on Football Shirts from different clubs or teams. This is just the basic idea with the ability to develop further into other sports or even the fashion industry,
+			</div>
+
+			<div>
+				<h3></h3>
+					Football Fashion is based around being able to try out ﻿﻿﻿﻿﻿﻿﻿different sports or football shirts without having to go to the stores themselves. This would be really useful in places like NZ where you dont have access to try on most of the different types of football shirts.
+			</div>
+
+			<div id="textp">
+				<h3>Research</h3>
+				<p>
+				
+				<a href="https://www.nytimes.com/interactive/2018/03/20/arts/design/bowie-costumes-ar-3d-ul.html" target="_blank">David Bowie costume exhibit</a></p><p> This is a 3D exhibit of David Bowies most famous costumes/outfits.
+				</p>
+
+				<p>
+				<a href="https://devpost.com/software/cosplayar" target="_blank">Cosplay Ar</a> </p><p>This being a pattern/ fabric cutting visualisation.
+				</p>
+
+				<p>
+				<a href="http://www.pictofit.com/" target="_blank">PictoFit</a></p><p>I think this is pretty much my idea already done but I havent been able to check the app itself as I dont have space on my phone. 
+				</p>
+				
+				<p>
+				<a href="https://apkpure.com/moosejaw-x-ray/com.marxentlabs.moosejaw.XRay" target="_blank">MooseJaw X-ray App</a></p><p>This app only works with its own website but allows it to be interacted with differently. 
+				</p>
+
+				<p>
+				<a href="https://www.wired.com/2011/05/augmented-reality-kinect-fitting-room-for-topshop-moscow/" target="_blank">TopShop VR Reality Dressing Room</a></p><p>This is probably the most accurate thing that I am going for. But it isnt mobile and just more of a standing display. I could also not find a mention of it on their site but found an article about it. 
+				</p>
+
+				<p>
+
+				<p id="title">Converse</p>
+				Converse have a shoe sampler app where you can try it on. I havent been able to find a specific link to their website about it.
+				</p>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+	<div id="phone">
+		<h2>
+			Potential UI Design
+		</h2>
+		<img src="phone.png" height="679" width="321">
+
+		
+
+	</div>
+
+
+</body>
+
+</html>
